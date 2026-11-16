@@ -55,20 +55,6 @@ each run every sixth cell (arguments: first cell, last cell, step). Finished cel
 
 `Simulation summary.R` and `Bootstrap.R` write their figures with `cairo_pdf()`, which embeds the fonts. If R was built without cairo, replace `cairo_pdf` by `pdf`.
 
-Approximate running times on a laptop (Intel Core i3-1215U, six cores):
-
-| Script | Time |
-|---|---|
-| `Validation.R` | 1 minute |
-| `Penalty path.R` | 5 minutes |
-| `Simulation.R` | 8 hours in six sessions (about 40 hours in one) |
-| `Simulation summary.R` | 5 minutes |
-| `Bootstrap.R` | 40 minutes in six sessions (about 3 hours in one) |
-| `Real data application.R` | 10 minutes |
-| `Row-wise algorithm benchmark.R` | 10 to 15 hours |
-
-The times in one session are estimates from the runs in six sessions.
-
 ## Relation to the results in the article
 
 All numbers, tables and figures in the article were computed with these scripts and the package versions listed above: `Simulation.R` and `Bootstrap.R` in six R sessions as in the example, the other scripts in one session. A rerun with the same versions should give the same results. Another version of R, of a package or of the linear algebra library can change single fits, because each fit is the best of several local searches, and with them the last digits of the simulation results.
