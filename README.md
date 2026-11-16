@@ -1,10 +1,12 @@
 # Least-squares factor analysis at a Heywood boundary: R code
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24278066.svg)](https://doi.org/10.5281/zenodo.24278066)
+
 R code for all numerical results of the article
 
 > Ouhssaine S, El Hadri Z. Least-squares factor analysis at a Heywood boundary: a penalty family and a bounded diagnostic in marginal-variance coordinates. *Computational Statistics* (submitted).
 
-The same code is attached to the article as Online Resource 2. Archived release: [Zenodo DOI, to be added after the first release].
+The same code is attached to the article as Online Resource 2. Archived release (v1.0.0, the version used in the article): [doi:10.5281/zenodo.24278066](https://doi.org/10.5281/zenodo.24278066).
 
 Soufiane Ouhssaine and Zouhair El Hadri, Laboratory of Mathematics, Statistics and Applications (LMSA), Department of Mathematics, Faculty of Sciences, Mohammed V University in Rabat, Morocco.
 
