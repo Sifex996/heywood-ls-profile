@@ -4,7 +4,7 @@ title: "R code for: Least-squares factor analysis at a Heywood boundary"
 version: 1.0.0
 date-released: 2026-11-16
 license: MIT
-doi: 10.5281/zenodo.24278066
+doi: 10.5281/zenodo.24278893
 repository-code: "https://github.com/Sifex996/heywood-ls-profile"
 authors:
   - family-names: "Ouhssaine"
