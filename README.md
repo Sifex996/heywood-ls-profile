@@ -6,7 +6,7 @@ R code for all numerical results of the article
 
 > Ouhssaine S, El Hadri Z. Least-squares factor analysis at a Heywood boundary: a penalty family and a bounded diagnostic in marginal-variance coordinates. *Computational Statistics* (submitted).
 
-The same code is attached to the article as Online Resource 2. Archived release (v1.0.0, the version used in the article): [doi:10.5281/zenodo.24278066](https://doi.org/10.5281/zenodo.24278066).
+Archived release (v1.0.0, the version used in the article): [doi:10.5281/zenodo.24278066](https://doi.org/10.5281/zenodo.24278066).
 
 Soufiane Ouhssaine and Zouhair El Hadri, Laboratory of Mathematics, Statistics and Applications (LMSA), Department of Mathematics, Faculty of Sciences, Mohammed V University in Rabat, Morocco.
 
@@ -23,14 +23,13 @@ Corresponding author: Soufiane Ouhssaine, soufiane.ouhssaine@um5r.ac.ma
 | `Simulation summary.R` | Reads `Simulation_results.rds` and prints Tables 2, 3 and 4 and the other numbers of Sects. 6.3 to 6.5. Draws `Fig1.pdf`, `Fig2.pdf` and `Fig3.pdf`. The intervals of Table 4 use $1000$ bootstrap resamples (`B_auc` at the top of the script). |
 | `Bootstrap.R` | The parametric bootstrap test of the residual (Sect. 6.6), $B = 199$. Saves one file per cell in `Bootstrap_cells/`, prints the rejection rates and draws `Fig4.pdf`. |
 | `Real data application.R` | Sect. 7: the two screens of data sets distributed with R, psych, lavaan and MASS, Tables 5 and 6 with the bootstrap check (B = 499), the spread of the fits over 50 starting values, and the smallest uniqueness returned by `psych::fa`. |
-| `Row-wise algorithm benchmark.R` | Online Resource 1, Sect. S3: the row-wise algorithm (PBCD) against L-BFGS-B over psi (two full eigendecompositions per point, one, or a partial Lanczos eigensolver), BFGS over the loadings and `psych::fa(fm = "uls")`. Prints Table S1 and draws `FigS1.pdf`. |
 
 ## Requirements
 
-R 4.6.1 with the packages psych 2.6.9, lavaan 0.7.3, MASS 7.3.65 and RSpectra 0.16.2:
+R 4.6.1 with the packages psych 2.6.9, lavaan 0.7.3 and MASS 7.3.65:
 
 ```r
-install.packages(c("psych", "lavaan", "MASS", "RSpectra"))
+install.packages(c("psych", "lavaan", "MASS"))
 ```
 
 ## How to run
@@ -42,9 +41,8 @@ Clone the repository, make its folder the working directory, and run each script
 3. `Simulation.R`, then `Simulation summary.R`
 4. `Bootstrap.R`
 5. `Real data application.R`
-6. `Row-wise algorithm benchmark.R`
 
-`Validation.R`, `Penalty path.R`, `Real data application.R` and the benchmark set the seed with `set.seed(123)` once. `Simulation.R` and `Bootstrap.R` set the seed 123 + c at the start of design cell c and save each cell in its own file, so their cells can also be run in several R sessions side by side, with the same results. For example, six sessions started from a terminal with
+`Validation.R`, `Penalty path.R` and `Real data application.R` set the seed with `set.seed(123)` once. `Simulation.R` and `Bootstrap.R` set the seed 123 + c at the start of design cell c and save each cell in its own file, so their cells can also be run in several R sessions side by side, with the same results. For example, six sessions started from a terminal with
 
 ```
 Rscript Simulation.R 1 230 6
@@ -60,8 +58,6 @@ each run every sixth cell (arguments: first cell, last cell, step). Finished cel
 ## Relation to the results in the article
 
 All numbers, tables and figures in the article were computed with these scripts and the package versions listed above: `Simulation.R` and `Bootstrap.R` in six R sessions as in the example, the other scripts in one session. A rerun with the same versions should give the same results. Another version of R, of a package or of the linear algebra library can change single fits, because each fit is the best of several local searches, and with them the last digits of the simulation results.
-
-The exception is the benchmark of Online Resource 1 (Table S1 and Fig. S1), which was computed with an earlier version of the code that ran on several processes. Computing times depend on the computer and on the number of processes, so the times in Table S1 are reproduced only in their ordering.
 
 The simulated data are not stored here; the scripts generate them. The published data come with R and with the packages psych, lavaan and MASS.
 
