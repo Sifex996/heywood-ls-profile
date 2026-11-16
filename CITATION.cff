@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the article and the archived release."
+title: "R code for: Least-squares factor analysis at a Heywood boundary"
+version: 1.0.0
+date-released: 2026-11-16
+license: MIT
+repository-code: "https://github.com/Sifex996/heywood-ls-profile"
+authors:
+  - family-names: "Ouhssaine"
+    given-names: "Soufiane"
+    affiliation: "Mohammed V University in Rabat"
+    orcid: "https://orcid.org/0009-0007-8686-7287"
+  - family-names: "El Hadri"
+    given-names: "Zouhair"
+    affiliation: "Mohammed V University in Rabat"
+    orcid: "https://orcid.org/0000-0003-3140-4510"
+preferred-citation:
+  type: article
+  title: "Least-squares factor analysis at a Heywood boundary: a penalty family and a bounded diagnostic in marginal-variance coordinates"
+  journal: "Computational Statistics"
+  status: submitted
+  authors:
+    - family-names: "Ouhssaine"
+      given-names: "Soufiane"
+    - family-names: "El Hadri"
+      given-names: "Zouhair"
