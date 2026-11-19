@@ -4,7 +4,7 @@
 
 R code for all numerical results of the article
 
-> Ouhssaine S, El Hadri Z. Least-squares factor analysis at a Heywood boundary: a penalty family and a bounded diagnostic in marginal-variance coordinates. *Computational Statistics* (submitted).
+> Ouhssaine S, El Hadri Z. Least-squares factor analysis at a Heywood boundary: a penalty family and a bounded diagnostic in marginal-variance coordinates. 
 
 Archived release (v1.0.0, the version cited in the article): [doi:10.5281/zenodo.24278893](https://doi.org/10.5281/zenodo.24278893).
 
